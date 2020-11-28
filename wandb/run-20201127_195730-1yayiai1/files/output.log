@@ -1,0 +1,25 @@
+2020-11-27 19:57:31.756137: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-11-27 19:57:31.756473: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-11-27 19:57:31.756488: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (DESKTOP-F5PGRR2): /proc/driver/nvidia/version does not exist
+2020-11-27 19:57:31.757020: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-11-27 19:57:31.766040: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1992005000 Hz
+2020-11-27 19:57:31.766522: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56063f5989b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-27 19:57:31.766539: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From train.py:167: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+This is a deprecated API that should only be used in TF 1 graph mode and legacy TF 2 graph mode available through `tf.compat.v1`. In all other situations -- namely, eager mode and inside `tf.function` -- you can consume dataset elements using `for elem in dataset: ...` or by explicitly creating iterator via `iterator = iter(dataset)` and fetching its elements via `values = next(iterator)`. Furthermore, this API is not available in TF 2. During the transition from TF 1 to TF 2 you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)` to create a TF 1 graph mode style iterator for a dataset created through TF 2 APIs. Note that this should be a transient state of your code base as there are in general no guarantees about the interoperability of TF 1 and TF 2 code.
+Traceback (most recent call last):
+  File "train.py", line 365, in <module>
+    train_cnn(args)
+  File "train.py", line 263, in train_cnn
+    model.fit(train_images, train_labels, steps_per_epoch=train_steps_per_epoch, \
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/wandb/integration/keras/keras.py", line 120, in new_v2
+    return old_v2(*args, **kwargs)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/keras/engine/training.py", line 108, in _method_wrapper
+    return method(self, *args, **kwargs)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/keras/engine/training.py", line 1049, in fit
+    data_handler = data_adapter.DataHandler(
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/keras/engine/data_adapter.py", line 1121, in __init__
+    if class_weight:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()

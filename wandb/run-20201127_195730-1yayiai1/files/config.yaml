@@ -1,0 +1,49 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.11
+    framework: tensorflow
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+batch_size:
+  desc: null
+  value: 128
+dropout_1:
+  desc: null
+  value: 0.2
+dropout_2:
+  desc: null
+  value: 0.2
+epochs:
+  desc: null
+  value: 1
+fc1_size:
+  desc: null
+  value: 128
+fc2_size:
+  desc: null
+  value: 50
+l1_size:
+  desc: null
+  value: 32
+l2_size:
+  desc: null
+  value: 64
+l3_size:
+  desc: null
+  value: 128
+lr:
+  desc: null
+  value: 0.001
+n_train:
+  desc: null
+  value: 16000
+n_val:
+  desc: null
+  value: 3200
+optimizer:
+  desc: null
+  value: Adam

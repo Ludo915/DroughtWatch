@@ -1,0 +1,46 @@
+2020-11-27 19:07:25.060434: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-11-27 19:07:25.060472: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2020-11-27 19:07:25.060495: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (DESKTOP-F5PGRR2): /proc/driver/nvidia/version does not exist
+2020-11-27 19:07:25.060746: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-11-27 19:07:25.071368: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1992005000 Hz
+2020-11-27 19:07:25.072602: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5654e2c3f490 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-27 19:07:25.072619: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Traceback (most recent call last):
+  File "train.py", line 363, in <module>
+    train_cnn(args)
+  File "train.py", line 248, in train_cnn
+    train_images, train_labels = parse_tfrecords(train_tfrecords, args.batch_size, args.num_train)
+  File "train.py", line 164, in parse_tfrecords
+    tfrecord_dataset = tfrecord_dataset.map(lambda x:_parse_(x)).shuffle(buffer_size).repeat(-1).batch(batch_size)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 1695, in map
+    return MapDataset(self, map_func, preserve_cardinality=True)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 4041, in __init__
+    self._map_func = StructuredFunctionWrapper(
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 3371, in __init__
+    self._function = wrapper_fn.get_concrete_function()
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 2938, in get_concrete_function
+    graph_function = self._get_concrete_function_garbage_collected(
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 2906, in _get_concrete_function_garbage_collected
+    graph_function, args, kwargs = self._maybe_define_function(args, kwargs)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 3213, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 3065, in _create_graph_function
+    func_graph_module.func_graph_from_py_func(
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/framework/func_graph.py", line 986, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 3364, in wrapper_fn
+    ret = _wrapper_helper(*args)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 3299, in _wrapper_helper
+    ret = autograph.tf_convert(func, ag_ctx)(*nested_args)
+  File "/home/ludo915/.pyenv/versions/lewagon/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 258, in wrapper
+    raise e.ag_error_metadata.to_exception(e)
+AttributeError: in user code:
+
+    train.py:164 None  *
+        tfrecord_dataset = tfrecord_dataset.map(lambda x:_parse_(x)).shuffle(buffer_size).repeat(-1).batch(batch_size)
+    train.py:146 getband  *
+        img = tf.decode_raw(example_key, tf.uint8)
+
+    AttributeError: module 'tensorflow' has no attribute 'decode_raw'
+

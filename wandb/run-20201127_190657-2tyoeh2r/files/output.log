@@ -1,0 +1,8 @@
+2020-11-27 19:06:58.552865: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-11-27 19:06:58.552930: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2020-11-27 19:06:58.552959: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (DESKTOP-F5PGRR2): /proc/driver/nvidia/version does not exist
+2020-11-27 19:06:58.557061: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-11-27 19:06:58.575729: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1992005000 Hz
+2020-11-27 19:06:58.577859: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564969d4b9c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-27 19:06:58.577909: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version

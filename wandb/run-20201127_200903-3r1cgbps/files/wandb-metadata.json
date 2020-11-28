@@ -1,0 +1,19 @@
+{
+    "os": "Linux-4.19.128-microsoft-standard-x86_64-with-glibc2.29",
+    "python": "3.8.5",
+    "heartbeatAt": "2020-11-27T19:09:03.920325",
+    "startedAt": "2020-11-27T19:09:03.139013",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--epochs",
+        "1"
+    ],
+    "state": "running",
+    "codePath": "train.py",
+    "program": "train.py",
+    "host": "DESKTOP-F5PGRR2",
+    "username": "ludo915",
+    "executable": "/home/ludo915/.pyenv/versions/lewagon/bin/python"
+}

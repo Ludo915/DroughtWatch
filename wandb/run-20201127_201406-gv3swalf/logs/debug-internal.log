@@ -1,0 +1,303 @@
+2020-11-27 20:14:06,932 INFO    MainThread:19276 [internal.py:wandb_internal():63] W&B internal server running at pid: 19276
+2020-11-27 20:14:06,935 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: check_version
+2020-11-27 20:14:06,935 INFO    WriterThread:19276 [datastore.py:open_for_write():76] open: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/run-gv3swalf.wandb
+2020-11-27 20:14:06,936 DEBUG   SenderThread:19276 [sender.py:send():90] send: header
+2020-11-27 20:14:06,936 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:06,936 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: check_version
+2020-11-27 20:14:06,938 DEBUG   Thread-4  :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): pypi.org:443
+2020-11-27 20:14:06,963 DEBUG   Thread-4  :19276 [connectionpool.py:_make_request():433] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 51947
+2020-11-27 20:14:06,973 DEBUG   SenderThread:19276 [sender.py:send():90] send: run
+2020-11-27 20:14:06,974 DEBUG   SenderThread:19276 [git.py:repo():30] git repository is invalid
+2020-11-27 20:14:06,977 DEBUG   SenderThread:19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:07,153 DEBUG   SenderThread:19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:07,157 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: run_start
+2020-11-27 20:14:07,158 INFO    SenderThread:19276 [dir_watcher.py:__init__():165] watching files in: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files
+2020-11-27 20:14:07,158 INFO    SenderThread:19276 [sender.py:_start_run_threads():487] run started: gv3swalf with start time 1606504446
+2020-11-27 20:14:07,158 DEBUG   SenderThread:19276 [sender.py:send():90] send: summary
+2020-11-27 20:14:07,159 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-27 20:14:07,162 DEBUG   HandlerThread:19276 [git.py:repo():30] git repository is invalid
+2020-11-27 20:14:07,223 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:07,223 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-11-27 20:14:07,227 DEBUG   Thread-11 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:07,227 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: status
+2020-11-27 20:14:07,228 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:07,228 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: status
+2020-11-27 20:14:07,231 DEBUG   SenderThread:19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:07,374 DEBUG   SenderThread:19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:07,376 DEBUG   SenderThread:19276 [sender.py:send():90] send: config
+2020-11-27 20:14:07,380 DEBUG   SenderThread:19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:07,381 DEBUG   Thread-11 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:07,384 DEBUG   Thread-11 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:07,542 DEBUG   SenderThread:19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:07,740 DEBUG   Thread-11 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/wandb-metadata.json?Expires=1606591299&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=C7baVFp4QTbeXqO4O4TNeKbMnUxWXAsL2GJHMVLZCasE3w5EGc6KdoTJbZGiv2yKbmZ695jR8gubafcYRDSmnJxNx%2B22KymL1Sd%2BQjlLzIui%2FPggRsJKmaLyR7mEustmkCJ32q9L8Q121RBiIswUrEhD6r5hHEQR6bdEHT7nG9KfGe1c%2B%2BeXzoY4lkgmJR67mqSmOQpM%2FIRReUel5AqW521DYGiJbf4cPvIUnc6BMhFjQfj0GHIh9SjvZentGZtBWm0j70J4eYi9Mog2PnuIJZTerxKp8KmFgGQepobtfi9l87mhcosm76WPDAa5tUk1gqdQ%2Ff7cPBh9lr485awGdA%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:07,741 INFO    Thread-11 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/xsx64jyl-wandb-metadata.json
+2020-11-27 20:14:08,159 INFO    Thread-8  :19276 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/config.yaml
+2020-11-27 20:14:08,159 INFO    Thread-8  :19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/output.log
+2020-11-27 20:14:08,160 INFO    Thread-8  :19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/requirements.txt
+2020-11-27 20:14:08,160 INFO    Thread-8  :19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/wandb-metadata.json
+2020-11-27 20:14:08,160 INFO    Thread-8  :19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/wandb-summary.json
+2020-11-27 20:14:09,548 DEBUG   Thread-5  :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:09,719 DEBUG   Thread-5  :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/ludo915/droughtwatch/gv3swalf/file_stream HTTP/1.1" 200 None
+2020-11-27 20:14:10,470 DEBUG   SenderThread:19276 [sender.py:send():90] send: stats
+2020-11-27 20:14:12,615 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,615 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_0.png with policy now
+2020-11-27 20:14:12,616 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,617 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_1.png with policy now
+2020-11-27 20:14:12,617 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,618 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_2.png with policy now
+2020-11-27 20:14:12,618 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,618 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_3.png with policy now
+2020-11-27 20:14:12,619 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,620 DEBUG   Thread-5  :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/ludo915/droughtwatch/gv3swalf/file_stream HTTP/1.1" 200 None
+2020-11-27 20:14:12,620 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_4.png with policy now
+2020-11-27 20:14:12,623 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,623 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_5.png with policy now
+2020-11-27 20:14:12,624 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,624 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_6.png with policy now
+2020-11-27 20:14:12,625 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,625 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_7.png with policy now
+2020-11-27 20:14:12,626 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,628 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_8.png with policy now
+2020-11-27 20:14:12,629 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,629 DEBUG   Thread-12 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,629 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_9.png with policy now
+2020-11-27 20:14:12,631 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,631 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_10.png with policy now
+2020-11-27 20:14:12,632 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,632 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_11.png with policy now
+2020-11-27 20:14:12,636 DEBUG   Thread-13 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,636 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,637 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_12.png with policy now
+2020-11-27 20:14:12,638 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,638 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_13.png with policy now
+2020-11-27 20:14:12,639 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,640 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_14.png with policy now
+2020-11-27 20:14:12,643 DEBUG   Thread-14 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,648 DEBUG   Thread-15 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,650 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,650 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file media/images/examples_0_15.png with policy now
+2020-11-27 20:14:12,652 DEBUG   SenderThread:19276 [sender.py:send():90] send: history
+2020-11-27 20:14:12,653 DEBUG   SenderThread:19276 [sender.py:send():90] send: summary
+2020-11-27 20:14:12,654 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-27 20:14:12,658 DEBUG   Thread-16 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,663 DEBUG   Thread-17 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,668 DEBUG   Thread-18 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,673 DEBUG   Thread-19 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,679 DEBUG   Thread-20 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,687 DEBUG   Thread-21 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,695 DEBUG   Thread-22 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,700 DEBUG   Thread-23 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,706 DEBUG   Thread-24 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,710 DEBUG   Thread-25 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,714 DEBUG   Thread-26 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,721 DEBUG   Thread-27 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:12,795 DEBUG   Thread-12 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,798 DEBUG   Thread-12 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,799 DEBUG   SenderThread:19276 [sender.py:send():90] send: files
+2020-11-27 20:14:12,799 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: get_summary
+2020-11-27 20:14:12,800 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file model-best.h5 with policy live
+2020-11-27 20:14:12,801 DEBUG   Thread-14 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,804 DEBUG   Thread-14 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,807 DEBUG   Thread-13 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,810 DEBUG   Thread-13 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,818 DEBUG   Thread-16 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,821 DEBUG   Thread-15 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,825 DEBUG   Thread-18 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,826 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-27 20:14:12,827 DEBUG   Thread-16 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,828 DEBUG   SenderThread:19276 [sender.py:send():90] send: exit
+2020-11-27 20:14:12,828 INFO    SenderThread:19276 [sender.py:send_exit():168] handling exit code: 1
+2020-11-27 20:14:12,829 DEBUG   Thread-17 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,829 INFO    SenderThread:19276 [sender.py:send_exit():176] send defer
+2020-11-27 20:14:12,831 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:12,831 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: poll_exit
+2020-11-27 20:14:12,832 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:12,835 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 0
+2020-11-27 20:14:12,839 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:12,839 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:12,839 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-11-27 20:14:12,840 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 1
+2020-11-27 20:14:12,840 DEBUG   Thread-15 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,841 DEBUG   Thread-18 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,841 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:12,842 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 1
+2020-11-27 20:14:12,846 DEBUG   Thread-17 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,846 DEBUG   Thread-20 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,852 DEBUG   Thread-20 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,853 DEBUG   Thread-19 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,854 DEBUG   Thread-21 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,859 DEBUG   Thread-19 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,863 DEBUG   Thread-21 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,866 DEBUG   Thread-22 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,872 DEBUG   Thread-22 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,874 DEBUG   Thread-23 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,878 DEBUG   Thread-23 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,878 DEBUG   Thread-25 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,882 DEBUG   Thread-25 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,883 DEBUG   Thread-26 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,884 DEBUG   Thread-27 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,887 DEBUG   Thread-24 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:12,891 DEBUG   Thread-26 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,899 DEBUG   Thread-24 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,904 DEBUG   Thread-27 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:12,906 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:12,906 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:12,907 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-11-27 20:14:12,907 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 2
+2020-11-27 20:14:12,907 DEBUG   SenderThread:19276 [sender.py:send():90] send: stats
+2020-11-27 20:14:12,908 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:12,908 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 2
+2020-11-27 20:14:12,908 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:12,908 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:12,908 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-11-27 20:14:12,908 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 3
+2020-11-27 20:14:12,909 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:12,909 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 3
+2020-11-27 20:14:12,910 DEBUG   SenderThread:19276 [sender.py:send():90] send: summary
+2020-11-27 20:14:12,910 INFO    SenderThread:19276 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-27 20:14:12,911 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:12,911 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:12,911 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-11-27 20:14:12,911 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 4
+2020-11-27 20:14:12,912 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:12,912 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 4
+2020-11-27 20:14:12,912 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:12,912 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:12,912 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-11-27 20:14:12,912 INFO    SenderThread:19276 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-11-27 20:14:13,127 DEBUG   Thread-12 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_0.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=PH5rxmehtdy%2BztZs7uwTq4DDTL4s1G9CYKjIP0yEcU3YLWbSU05OAjZK0ACo49Hm%2FrXYP6Wb4f5Fr1Xeec3ZGavGS8eJlqEmgDlqBtayY05F%2Bintue3DQqdJuRKlQnHtHVRTBoy1LeU2wpjA7lCxFIszPxaH%2FIROQnTo5S2Na8BKsYKjnmPJFe2ybkZgIT9O0iUbCieRSaD22eOvtWN1%2B2upNfzfwYgL%2F%2BCTkg2djimkZ4pluOe%2FGcLol49rgfXOLvcS7V%2BKeNs%2BTw2ISw%2FqusDv59%2FG42nEoURwPbe%2FXudNQLgdAlCY%2FKdkkW6%2FeVWStHkNfU4KTA8S8E2LWUNw3w%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,128 INFO    Thread-12 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/lvssktki-media/images/examples_0_0.png
+2020-11-27 20:14:13,140 DEBUG   Thread-13 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_1.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=W1GOEF44uIc8cxx4MChB5ULpxyWnPqeev6qpmy3tO77Zi7r58eyyxV5CS%2Bxqt0l1ct3Zroyu5bVbLTgZeraMe7cpP5KpY1MZmYjmnYqi9Rx%2FoFcAduqxu9ooyy%2F8pqQpiO%2FlqRn7aG6A2dbVxsJSVNc4lZTynywkWUsNlWUrgtxD2m0zERk0XdqyoXCCgQAesmyPmT6LRmxIPz35Qtfe5V5gq1AVJBbpCZSOLit%2FodASN1qWzHmzXp%2F8K7YHXIIFWmU%2BPOo5n7bD6SVrFsl%2BkoRIytPR1QZTTUBt76n2jEQurlmVaxfS9Fl5Nrnl5%2Br0%2FMEIFv2J7ztP8FwGGdA7Yg%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,141 INFO    Thread-13 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/2tfwi67x-media/images/examples_0_1.png
+2020-11-27 20:14:13,150 DEBUG   Thread-16 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_4.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=g7zQOie8pyQYsIZNs07Mlx6YLTkiKDqeWzpIbPuIL%2FPI%2BtH%2FG6hlWLmdyHdEiyCjA5TBxsYP6STidPUKcl%2BfeUe59y9pdt2q6nXZ0samsThUaDxxKE3eW38WMZCuuWdD%2BAjhRqwo13o7a3v6Wg16KOdryto8sVG5Bip1xJpT9ZZnOvrlmQ9IjXoKz0GRbHmX6Y8xyWgMIZQrxYRioINi1iVCwyh5Iu1Ri3w%2F52GP9EXAZAPlA8qioBx%2Fk4xrZv87Er2HpMA0Dt4ffuDO7sG0ZSL3%2FscMijVwhMUrgi8OCtc8kqIIGc%2Ff6L9TAITsb8935P9%2F1uZGtV7yiBvn9JwRuw%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,151 INFO    Thread-16 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/xdo2joi9-media/images/examples_0_4.png
+2020-11-27 20:14:13,152 DEBUG   Thread-14 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_2.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ekqseXFeCa4pd%2BnaJtNN2u4cuXAPSP7iGA4G1tXYYt8JWlJthUQEGsNpIvQRHGgXj9jAt0g53R%2BfbiK3rH1BAPEsSTRXh1L%2FvNOZyVvMeqLfuUkfuFBW1OxOqKLMlVWPfPF0WeFHh1ES6K350fyW09kSTjiTzKIdOmziYmgfZgkPrKqDQjzrpcPBUx10x5gJ%2F8tDlv9NKcHjHpM5dNwlw6w07ItrU40BnQAp%2B90WenAOT6PD0tq0bVDzazlwkY6bnxz1rDRFzVeEv2zDBhal9k0e33jtM2p9VaXBOfVLmfnBQIwHyN9JmzQnOH%2B5fV0ycojXpM7LpmuEW8k3MBwQOA%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,153 INFO    Thread-14 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/2cj6m2z3-media/images/examples_0_2.png
+2020-11-27 20:14:13,159 INFO    Thread-8  :19276 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/output.log
+2020-11-27 20:14:13,160 INFO    SenderThread:19276 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/wandb-summary.json
+2020-11-27 20:14:13,160 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_10.png
+2020-11-27 20:14:13,160 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_7.png
+2020-11-27 20:14:13,160 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_3.png
+2020-11-27 20:14:13,160 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_11.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_0.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_8.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_15.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_13.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_6.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_14.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_9.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_4.png
+2020-11-27 20:14:13,161 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_5.png
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_2.png
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_1.png
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_12.png
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:_on_file_created():213] file/dir created: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:finish():309] scan: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files
+2020-11-27 20:14:13,162 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/output.log output.log
+2020-11-27 20:14:13,163 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/config.yaml config.yaml
+2020-11-27 20:14:13,163 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/wandb-metadata.json wandb-metadata.json
+2020-11-27 20:14:13,163 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/requirements.txt requirements.txt
+2020-11-27 20:14:13,163 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/wandb-summary.json wandb-summary.json
+2020-11-27 20:14:13,164 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_10.png media/images/examples_0_10.png
+2020-11-27 20:14:13,168 DEBUG   Thread-29 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:13,168 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_4.png media/images/examples_0_4.png
+2020-11-27 20:14:13,168 DEBUG   Thread-28 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:13,173 DEBUG   Thread-31 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:13,173 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_11.png media/images/examples_0_11.png
+2020-11-27 20:14:13,174 DEBUG   Thread-30 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 20:14:13,175 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_13.png media/images/examples_0_13.png
+2020-11-27 20:14:13,175 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_15.png media/images/examples_0_15.png
+2020-11-27 20:14:13,175 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_12.png media/images/examples_0_12.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_2.png media/images/examples_0_2.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_3.png media/images/examples_0_3.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_1.png media/images/examples_0_1.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_6.png media/images/examples_0_6.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_5.png media/images/examples_0_5.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_8.png media/images/examples_0_8.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_14.png media/images/examples_0_14.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_7.png media/images/examples_0_7.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_9.png media/images/examples_0_9.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [dir_watcher.py:finish():315] scan save: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/media/images/examples_0_0.png media/images/examples_0_0.png
+2020-11-27 20:14:13,176 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 5
+2020-11-27 20:14:13,177 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:13,177 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 5
+2020-11-27 20:14:13,177 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:13,177 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:13,177 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-11-27 20:14:13,177 INFO    SenderThread:19276 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-27 20:14:13,177 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 6
+2020-11-27 20:14:13,178 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:13,178 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 6
+2020-11-27 20:14:13,178 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:13,178 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:13,178 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-11-27 20:14:13,183 DEBUG   Thread-18 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_6.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=JkDdh%2BINXiO1Lc%2FfRH%2Fj0X8f31Ma7sZZnmAS3XAOvsEEzA9mpod8i9hboBaBqXWFU4KLnysXGIhh%2BXjRESYV0Oe6UIrIaZKTPUuJgf3CAIRGxoysg7fHpz65F2XkCA38RhgYAJUhNSLVTdadJdf8AC4Jbvr7KGSu2eWPLwnxeJi%2F2K9OuT9jq68xtQSz1Y6Y6XqoX%2Fq1v3zosSX6LI%2B3Tv8KrsogHLhBtarcfKMRobzUai2PktFHtOcGaEIrU4zRVwMgMqyPkgh1QTCOz%2F%2FeOGmVyGKxZBhwaM6TvuW0KDDt5QcgRN8blg8fSDij%2Fd%2BEyeMTvGpdhgAQuD0zFZhgZQ%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,183 DEBUG   Thread-15 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_3.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=UIw5%2Fn5DZToIv853aHTfmRltXu%2FbiIiRw8Oba9SScA8IdLxqWBSPKPxcjDhXucyf9wCoRXH60eI1fnEl3ax4qcHtHXpjblwVS0kQePA0wCPakDG%2FzXiKQEv7b0ZhyPMKpSLI9Vt4rnF0Hjb0mQnjxMGVeH0fMTBtcjQ0Sae8qpSc86LmRmV6q5PIPLZeiq00CjPxe8sHTbpjYegriwJA0FC4qxlFcvnqwgZid90CWSw5UH%2BoIkWb6c%2B9kEsu525jcEIGJyxrCZYA3qxI3%2B0UWWqCVoFHJLbdxulGzD4hl%2FAueqmoMY4F1kjMLG0Az6mGDHfr5EDpOxi01iEkRWthvQ%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,185 INFO    Thread-18 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/1c5fle3b-media/images/examples_0_6.png
+2020-11-27 20:14:13,186 INFO    Thread-15 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/26klpul0-media/images/examples_0_3.png
+2020-11-27 20:14:13,200 DEBUG   Thread-21 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_9.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=XMMjNYjJC8%2BDhikTRjs7toeCSiMBIlqY384o3TuyrO9HbWlOMxsX28gLOM9f7ErZ7Jv6JvZaniFOmMh7cJgazwon1BlF8XoMNLNNBtFIg2Tl7M52%2BrM5EBiWAsCXuJl%2FgLq8InzQnU7adg%2FDfGRD8%2FhFmoezaBI%2BgFuHktDZpKrl8CrursqHguRcyKVSgbw7Q43fXKNK%2BXTS%2FKuMwbjPLyrY78FlHhwrCX0ZgeRww1p5uxxds5wqRhwj%2Bdo0fFzQK4lEwDCAdsGCZXzQ%2BigW625IO2B2QH1RF7SCzOtUgkkk8Rq8ltvoq%2FrYUh1J60%2B%2BuDxgu%2BPjdj7pn5pxR%2Fqx4w%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,201 DEBUG   Thread-19 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_7.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DTTiWP4XbpnUxjdyuh2q4YpWyCF7BQtWmuV4Z%2BKZ9EvnLTtSUjBQPjs3NfS4%2F%2BVzye1ucF4yls4NytCtK5mr8dKinpi2yaqvR%2FYewzb5UiC26uff5XaSYkhVF3USR0eg84f2YCUZ3g%2BQhUPdFJJUyFzLRgh%2Bp%2F4L0Uvp8fw3lSuID142REyjKcvxp2P0dZmZl9LAt%2FAnIcuM5aHmHlt7ut2fQdGPgmMLWsYfrlGv2p0hrLLv6BAutYYSIrUKXG2jovh%2FxjBpIw9OPg530Rr4JroTptClSo710j8TtcwaIVl3YoWFWaDZ%2B3LiRroAGVzmvIPHJ6aiPyUkbah%2FmsnS8w%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,202 INFO    Thread-19 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/20c71i3l-media/images/examples_0_7.png
+2020-11-27 20:14:13,203 INFO    Thread-21 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/175fvky5-media/images/examples_0_9.png
+2020-11-27 20:14:13,204 DEBUG   Thread-20 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_8.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=dMx4x1jJBEUHk92e76rwxBvKswIwxJ5t%2BVa%2BNC7hODgpvCDdKMvzfCFCCDRjrsq8BGE6sPcjq5DBB0xPqKeUWR5DIYBKD9f64E5JTupvgjsaP15l%2F7YmCsBV3zVTjQ8j04b9PT3akmjQ0oD5GWyPWj2b%2Bq3P%2BzRWH1fLXXLS3OAmeesthLkD49y6MhlPB8rui91zaGbhlW%2Fht55PeNWBm5LmuVHM5mEo8aYkYi57aSmEnQIN2NJUawzcNNuzXAgxUWNfxBDGwWbmixjQ9l5q9NHEnwks4aUdZH7XlIV%2B0coVF2FoUAMxP8YSftVYY6i7jVdCxDy1gqNh%2BFmm%2BNO5Ug%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,205 INFO    Thread-20 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/1jdk9ahp-media/images/examples_0_8.png
+2020-11-27 20:14:13,213 DEBUG   Thread-22 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_10.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=HlgznUnpSoj1te%2FwDB5dCTPt%2FKoqR5JOQdxyz2dL37idFiDecmVQCGwObeTLgFVGfXdgOG4pnWVIFQquEptb3rYylK%2ByVoOQc%2BrcvHyOY4lON84EifnRF5z9PrjV11xB%2BoSQYvEVeOtFe2W1C6K4pyvyjSHi5ERlzijX%2Fjo8duO4%2BMDI1AA0RvUpjUGfQhGyFnoMfnswqAk%2FugOYUxpl6Ohxeri%2BAKQnRoHLNLVl1C5dZHi6HEJRYsxPFeAjxaOh7MLBfOY3Wl4lbUUy8rzbWx%2FSVbB434fh9jCOFQ42bsLKyYvBl0tflzmUBBd6FXxCHriJdiuRqNY7DQnks8h2pQ%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,213 INFO    Thread-22 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/2h7t9nnu-media/images/examples_0_10.png
+2020-11-27 20:14:13,222 DEBUG   Thread-24 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_12.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=bHnISXSw4MPlK1ObmpI6k%2B%2FNkavq%2FFVNuShSNLxypz1GwN89TJ3QOuDXFUpHtjJ9Jqk9T3MPAshvJKO6LLopNtzOp38rqU%2F5McXHDeNDjpkvOg%2BLSdWOQaIQsVfS2OaftuXTOPVviwJjgqG0K45jl0g8s5bdTk7ESJfs4F9m48PLdyK4YdUiCJULgJ9wauQzAfJ3nSeGh0K0qJzvITD1CqYwrh5Y4wevSPjhHExkdwGX3KDjv1quPHThMfP1a74v0BiBYA341cHONdKsxDgc9Ynl9BiL%2BcFAtfGRcRXKRYH9bRcX0rDYAbHZozWVol0%2BL5wZ8Ntr9MfyjFKPcHzYag%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,223 INFO    Thread-24 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/35xr90gk-media/images/examples_0_12.png
+2020-11-27 20:14:13,236 DEBUG   Thread-23 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_11.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Lrx8ZFmTDwZMGTVO4iihNcRFg5470NkeK1bg%2FCop7vvr3SQYF2eYBRTNM9AfGcjMAxuz%2FlQOFO%2FPZfwoR8zdL%2FaG93jNzIqqDbjVA6YxxzoM%2Fqf4KQEMkX07OFzlDqgfC2CX04TRMFbLoG3db9r5Bv1%2FaYyRBdMsMw22R8sliBv8vbUt3AnXll%2Fng8sjKwoFthznDWlAX0vURO6V53Z7hmlIYZMaUwvEyRjGisXAdmTNALG7FpnbGA45kjfU%2F5LWJn5oq%2B4Tl5oAM3GI2nJd2G%2B97OhWVjwQ%2F4ld%2BsvOfvPxrIXCHHdnQfoiD%2FVYfY5lqlXBGivmHvGIaKSL9oUdiA%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,237 INFO    Thread-23 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/d0oqji64-media/images/examples_0_11.png
+2020-11-27 20:14:13,251 DEBUG   Thread-17 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_5.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=fCuLts9WLnJtCJAeJ01Aar0SyZJoGvgAZ7NezLfO7hv0XdKaZNVapXCK72XoLT45lv5JQaf6A7CkP3vU7Jxo07Q12w5tFCP5KASD9l%2BYpXxNqP6RrbTIcCOIIkwW9%2BkGJLzEf9mWKEdCg9GQCr7s01R%2FOCib93uiMJuvvEYZXZ5pza%2BP5wEMmOHLsldFiD%2Fu%2BS%2FjDiIUjZp72ZrW1DA1BYzaWUdwggMIgFNkXH5gY3IgdEsBPV%2FmvHrLOyOVbwuzZsWweGeHm6dvFrL6v%2BTO9R5l1xLm%2FHVnNagKr34N8uBlmCxuajH4Enknzw1Myl5h7jmdI80IkzQ59YIlVvyTFg%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,252 DEBUG   Thread-25 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_13.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Bq9JAM8e6w5i6s5qHS9yjk2C7FOXv6fLHw3tNpwO4peOxDfa57p8Ho6ZYproc7cbhzVHhP9OR4swMQ5J1dBdE4%2FT8H4iW8OaU0PpP%2FVw8uqYg4Py%2BdWsGhZTQH6fmIQto2PKPc9bny8v6ttKHyAzst9JazHbcpI7%2FzBJgU7nVSkYXSnzJlcCzMngWFyrNIKabTjPgNznMlsy%2Bj5B640M4l4KPQflKKTc9O%2B4oHfGVj8Rymqvk7kj%2F0tSUKZA9JK5fXwb%2BuDrM7z2huVLovOnyJFYLcl3rrTbDOVVRJSyeYi%2FfYZXhn2a1EGNLFjz4kqIjNDO9Gdkk1NhTSlOiw60fQ%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,253 INFO    Thread-17 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/jccjwysa-media/images/examples_0_5.png
+2020-11-27 20:14:13,253 INFO    Thread-25 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/qc30b9nn-media/images/examples_0_13.png
+2020-11-27 20:14:13,256 DEBUG   Thread-26 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_14.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=actDDN50mKjmJW6wWOpWzkZeHHRFe%2FG891r2zKIEtORlNcO8HGSqz2YlT51HlDqFtgCPvenhl6bywhWTsBG3sIzc6pXfMRmKYAP22Gpx9tAjSvHIVgYOvzDgquBmxoNOFfp4AqTr6W13xpAgfotW%2BPOx%2F7bhedX1Gey9avxiZpSDCztLPoxMAdOyAafRlOTbbFRvQdUVOHolGC6yXJ2RuspmEYBVV9Lw8i9JQrCIDGhbl2r2UWIw1qZcHTYfzW7fACt3SU3ajGhIpDWoVzjTkMUACv0E8LFWT5MjKwP2WpEJTOuFrIH9krP606O0dAibognw%2BItDRzA0v%2B3QcdH6AA%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,257 INFO    Thread-26 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/2r9msdcf-media/images/examples_0_14.png
+2020-11-27 20:14:13,264 DEBUG   Thread-27 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/media/images/examples_0_15.png?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=JmQLnUfLAm4YcLwTZJ5vw2uPU3SUC9PDU5fxR1A7Y0EO3TZnYSNhs5p8Tt8ActoyW6MkGPC0g2TPipq6RH%2B8QSM%2B2a%2BjAd0HReZaUQu0Y4azmwrJDM2EC2QjeRBfKcv1V%2BC7bkOJE0MBtCl3yo8MgqINzDh%2FEsgLOdCgQpcEt0VrFdxe%2FFMvVoPUwg2khSq52YH22MMdeT%2BRd4aVdG1bpq2zrg8q%2F542kqrvmMhHvGjR%2BwuSZG6QZHqLXa%2BARMqF%2BShNNnfPVW%2BaBt9%2FNGuxQtnMLeL6kaGmD%2F2a%2BL5XfXeRU9E9z350T63VzZgHkkiWAoBJ79c8a1aJRCYDCnEWFg%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,266 INFO    Thread-27 :19276 [upload_job.py:push():131] Uploaded file /tmp/tmp72jbw_eywandb/2ann7xsm-media/images/examples_0_15.png
+2020-11-27 20:14:13,325 DEBUG   Thread-29 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:13,328 DEBUG   Thread-29 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:13,333 DEBUG   Thread-28 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:13,334 DEBUG   Thread-30 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:13,341 DEBUG   Thread-31 :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 20:14:13,341 DEBUG   Thread-5  :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/ludo915/droughtwatch/gv3swalf/file_stream HTTP/1.1" 200 None
+2020-11-27 20:14:13,345 DEBUG   Thread-28 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:13,347 DEBUG   Thread-30 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:13,348 DEBUG   Thread-31 :19276 [connectionpool.py:_new_conn():939] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 20:14:13,479 DEBUG   Thread-5  :19276 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/ludo915/droughtwatch/gv3swalf/file_stream HTTP/1.1" 200 None
+2020-11-27 20:14:13,481 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 7
+2020-11-27 20:14:13,481 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:13,481 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 7
+2020-11-27 20:14:13,482 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:13,482 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:13,482 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-11-27 20:14:13,482 INFO    SenderThread:19276 [sender.py:send_request_defer():221] send defer: 8
+2020-11-27 20:14:13,483 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 20:14:13,483 DEBUG   SenderThread:19276 [sender.py:send():90] send: final
+2020-11-27 20:14:13,483 INFO    HandlerThread:19276 [handler.py:handle_request_defer():69] handle defer: 8
+2020-11-27 20:14:13,484 DEBUG   SenderThread:19276 [sender.py:send():90] send: footer
+2020-11-27 20:14:13,484 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:13,484 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: defer
+2020-11-27 20:14:13,484 INFO    SenderThread:19276 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-11-27 20:14:13,666 DEBUG   Thread-28 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/output.log?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=UT34c9BNkgrNOi7pp1cBf%2BRZ9bigLNRBLuP2JEIOzvpXSemaLDOmzQ3%2FiqS4UneN9udjqt2ycm%2F8np4pTGkljlw3hwsWR3oNseWP6OuYMV%2FQILKlAuPyh79jwEZeMAnIHwppNXLasEYGN1vn12efXXWs8Okh4FH6rXKxYjte8cwp1ZPGEWUICbZHtFREV%2BOlxWt4S%2Bf4kOvWqcTJ3ZUi%2FHolgXq4KCNhYcJ9Zq70zLMBnxLMhryPkf%2FnaRStRw%2FBNaPI0NdrjI1OLkeJ3wpnkWNizrzubY0YYiyanun%2BNzJt5IVVpwOft783qoYYMFCtX0xfeEY%2B%2BBHRoIrUZLC%2B%2FA%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,667 INFO    Thread-28 :19276 [upload_job.py:push():131] Uploaded file /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/output.log
+2020-11-27 20:14:13,674 DEBUG   Thread-30 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/requirements.txt?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=AaDMe%2Bg%2FOJSULdnqgYvF5fPHp%2FTzK1N4NsntrYBp5fbIxNR5U%2FhTHM0z%2BxiexI6Bpmhb9bajVynWd6E1qpabU0SJSh61xMvjRmoN2aY3UMtbymbYT3vIopp%2BZMJGUalRY1suKqKI%2FYaTu8u7Kc2yvaw1ZjoAAFNiYUc4fhvqW%2BGJgr1uwjJ1Zj%2FKGjOnC7xRexGfmlGnT4rTGepiQgi%2Bcpa8KYSuIrkq3YIQivaAYeS83S8Vk3Gug%2BIMiEjQNLqelklvs0L%2FjVFb%2FyftEl1JxB15NX7UGUNC%2Fz4QDJLuA7iZOrvy55DcU92Ab0F2uwusSNao6JxVWcKDytREvGweuQ%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,675 INFO    Thread-30 :19276 [upload_job.py:push():131] Uploaded file /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/requirements.txt
+2020-11-27 20:14:13,696 DEBUG   Thread-29 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/config.yaml?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=I0%2BZib7axAR2OIlalkYfo6k0v4TNKnHhYqrhIUmglS7E%2FT1jMwLKeGdwc3pR10Q7bOO%2BWRDG%2Bez2LsrsNKhBg1uzURGocxnRbpvRx0nFavtV9qCjgc1pdo7rZgzKWbsxDhaPkQAcqKMT0%2BlY2WJrDBYjg0fKimSjZXaddfePDEIiZi7TL5XGwiBUJeBbkcK%2BpjLFO8mgTxTCYp97%2FrGyFpImVrIvLMq9hwD0daaikfI4gt3nxD1sxbyif7mNxrHETfoM3MuoLhmMbPym%2B2nrF1%2B3QQ8M7D1DHeH71mXUwebwe%2FNA5Q1Z7FrhYbWi3pxcKcUKU%2BBEdpKJ0kLYzPP%2Bjg%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,698 INFO    Thread-29 :19276 [upload_job.py:push():131] Uploaded file /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/config.yaml
+2020-11-27 20:14:13,710 DEBUG   Thread-31 :19276 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ludo915/droughtwatch/gv3swalf/wandb-summary.json?Expires=1606591305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=EaG%2BPiwJg7JKgU3pKT3bdd4H1eHJdC5CtyN2DFrzpf8goOGtc1nEpobhdr8XMLT7BAteKCsErGnvkqmSA%2F7OG9XcC%2FlIrjgpb6mCRKuPrVt87sn%2FOxcP4EvZJozZfSTcJri5BEChGCHVl7WPGktUWQeg2mg%2F4OSOvf5aQ92zKitaFdiyjmdWxJ9rFz7H3%2FVSyrj%2Bdh0MWTbK0EdLiSb5JTLB5SyaLyc9NWjztR88esoy47IJhNKyTWOH1eNomLsWc9K7eDMi2TX3EMMaePURWSGtTmK5oxZqOPuiicWaR0VWPVf245XSrc1TF8GFIZDYkJru0t5931jxm2bGT%2BdKbg%3D%3D HTTP/1.1" 200 0
+2020-11-27 20:14:13,711 INFO    Thread-31 :19276 [upload_job.py:push():131] Uploaded file /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/files/wandb-summary.json
+2020-11-27 20:14:14,836 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-27 20:14:14,836 DEBUG   SenderThread:19276 [sender.py:send():90] send: request
+2020-11-27 20:14:14,836 DEBUG   SenderThread:19276 [sender.py:send_request():99] send_request: poll_exit
+2020-11-27 20:14:14,837 INFO    SenderThread:19276 [file_pusher.py:join():174] waiting for file pusher
+2020-11-27 20:14:14,838 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: get_summary
+2020-11-27 20:14:14,839 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: sampled_history
+2020-11-27 20:14:14,841 DEBUG   HandlerThread:19276 [handler.py:handle_request():55] handle_request: shutdown
+2020-11-27 20:14:14,841 INFO    HandlerThread:19276 [handler.py:finish():271] shutting down handler
+2020-11-27 20:14:15,484 INFO    WriterThread:19276 [datastore.py:close():257] close: /home/ludo915/code/Ludo915/droughtwatch/droughtwatch-master/droughtwatch-master/wandb/run-20201127_201406-gv3swalf/run-gv3swalf.wandb
+2020-11-27 20:14:15,837 INFO    SenderThread:19276 [sender.py:finish():642] shutting down sender
+2020-11-27 20:14:15,837 INFO    SenderThread:19276 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-27 20:14:15,837 INFO    SenderThread:19276 [file_pusher.py:join():174] waiting for file pusher
+2020-11-27 20:14:15,839 INFO    MainThread:19276 [internal.py:handle_exit():138] Internal process exited
